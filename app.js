@@ -39,6 +39,16 @@ app.get("/pokemons", (req, res) => {
   res.json({ pokemons });
 });
 
+// Endpoint /series
+app.post("/series", (req, res) => {
+  const series = [
+    "Médicos em Colapso",
+    "Rainha das Lágrimas",
+    "Tudo Bem Não Ser Normal",
+  ];
+  res.json({ series });
+});
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 
