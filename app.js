@@ -12,6 +12,12 @@ app.get('/req', (req, res) => {
     res.send('Yo!')
 })
 
+// Endpoint /meunome
+app.get("/meunome", (req, res) => {
+  res.send("Meu nome é Moniky Souza Lopes 🤩");
+});
+
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 
